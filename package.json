@@ -1,0 +1,16 @@
+{
+  "name": "azf-freg",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "@vtfk/logger": "^4.3.2",
+    "node-cache": "^5.1.2"
+  },
+  "devDependencies": {
+    "azure-functions-core-tools": "^4.x"
+  }
+}

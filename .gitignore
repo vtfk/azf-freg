@@ -102,3 +102,12 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Certificates
+*.pfx
+*.pem
+*.key
+*.cert
+
+# Local settings
+local.settings.json
