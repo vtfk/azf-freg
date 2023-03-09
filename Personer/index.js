@@ -22,11 +22,18 @@ module.exports = async function (context, req) {
     return { status: 500, body: error.toString() }
   }
   // return { status: 200, body: accessToken }
-  const ssn = req.body.ssn
+  const { ssn, includeFortrolig, includeForeldreansvar } = req.body
+  if ( !ssn) return { status: 400, body: 'Body is missing required property "ssn"'}
+  if (ssn.length !== 11) return { status: 400, body: 'Property "ssn" must be lenght 11'}
+  
+  const options = {
+    includeFortrolig: includeFortrolig || false,
+    includeForeldreansvar: includeForeldreansvar || false
+  }
+
   //const url = `${freg.url}/${freg.rettighetUrl}/v1/personer/${ssn}`
   // const url = `${freg.url}/${freg.rettighetUrl}` // /v1/personer/${ssn}`
   const url = `https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/${ssn}`
-
   // return { status: 200, body: url}
   try {
     const headers = {
@@ -35,7 +42,7 @@ module.exports = async function (context, req) {
     }
     const config = { headers }
     const { data } = await axios.get(url, config)
-    const repacked = repack(data)
+    const repacked = repack(data, options)
     return { status: 200, body: repacked }
   } catch (error) {
     console.log(error.response)
