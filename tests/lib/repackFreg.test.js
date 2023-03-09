@@ -36,7 +36,7 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresseIUtlandet.adressegradering).toBe('ugradert')
   })
   test('Person har utenlandsk adresse (ikke i fritt format)', () => {
-    const { repacked }= repackFreg(personMedUtenlandskAdresse)
+    const { repacked } = repackFreg(personMedUtenlandskAdresse)
     expect(repacked.postadresseIUtlandet.gateadresse).toBe('Erik Nilsson, Gatan 10')
     expect(repacked.postadresseIUtlandet.poststed).toBe('Gothenburg, Västre Götaland')
     expect(repacked.postadresseIUtlandet.postnummer).toBe('SE-412 50')
@@ -44,7 +44,7 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresseIUtlandet.adressegradering).toBe('ugradert')
   })
   test('Person har adressebeskyttelse strengtFortrolig', () => {
-    const { repacked }= repackFreg(personMedAdressebeskyttelse)
+    const { repacked } = repackFreg(personMedAdressebeskyttelse)
     expect(repacked.bostedsadresse).toBe(null)
     expect(repacked.postadresse.gateadresse).toBe('SOT 6, Postboks 2094 Vika')
     expect(repacked.postadresse.poststed).toBe('OSLO')
@@ -52,7 +52,7 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresse.adressegradering).toBe('ugradert')
   })
   test('Person har adressebeskyttelse fortrolig - uten option "includeFortrolig"', () => {
-    const { repacked }= repackFreg(personMedFortroligbeskyttelse)
+    const { repacked } = repackFreg(personMedFortroligbeskyttelse)
     expect(repacked.bostedsadresse.gateadresse).toBe('Fortrolig adresse')
     expect(repacked.bostedsadresse.poststed).toBe('UKJENT')
     expect(repacked.bostedsadresse.postnummer).toBe('9999')
@@ -63,7 +63,7 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresse.adressegradering).toBe('fortrolig')
   })
   test('Person har adressebeskyttelse fortrolig - med option "includeFortrolig"', () => {
-    const { repacked }= repackFreg(personMedFortroligbeskyttelse, { includeFortrolig: true })
+    const { repacked } = repackFreg(personMedFortroligbeskyttelse, { includeFortrolig: true })
     expect(repacked.bostedsadresse.gateadresse).toBe('Odlandsvegen 87')
     expect(repacked.bostedsadresse.poststed).toBe('RØLDAL')
     expect(repacked.bostedsadresse.postnummer).toBe('5760')
