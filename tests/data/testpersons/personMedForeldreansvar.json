@@ -1,0 +1,158 @@
+{
+  "identifikasjonsnummer": [
+    {
+      "ajourholdstidspunkt": "2020-12-22T16:08:28.882Z",
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "status": "iBruk",
+      "foedselsEllerDNummer": "07911998224",
+      "identifikatortype": "foedselsnummer"
+    }
+  ],
+  "status": [
+    {
+      "ajourholdstidspunkt": "2020-12-22T16:08:28.882Z",
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "gyldighetstidspunkt": "2020-12-22T16:08:28.882Z",
+      "status": "bosatt"
+    }
+  ],
+  "kjoenn": [
+    {
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "kjoenn": "kvinne"
+    }
+  ],
+  "foedsel": [
+    {
+      "ajourholdstidspunkt": "2022-02-04T10:26:53.62935Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "gyldighetstidspunkt": "2019-11-07T10:26:53.629346Z",
+      "foedselsdato": "2019-11-07",
+      "foedselsaar": "2019",
+      "foedekommuneINorge": "3021",
+      "foedeland": "NOR"
+    }
+  ],
+  "foedselINorge": [
+    {
+      "ajourholdstidspunkt": "2022-02-04T10:26:53.697617Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2019-11-07T10:26:53.697618Z",
+      "foedselsinstitusjonsnavn": "Verdifull Testinstitusjon",
+      "rekkefoelgenummer": 11
+    }
+  ],
+  "familierelasjon": [
+    {
+      "ajourholdstidspunkt": "2022-02-04T10:26:53.438581Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "2019-11-06T23:00:00Z",
+      "relatertPerson": "25929297736",
+      "relatertPersonsRolle": "far",
+      "minRolleForPerson": "barn"
+    },
+    {
+      "ajourholdstidspunkt": "2022-02-04T10:26:53.362359Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "2019-11-06T23:00:00Z",
+      "relatertPerson": "25819499821",
+      "relatertPersonsRolle": "mor",
+      "minRolleForPerson": "barn"
+    }
+  ],
+  "sivilstand": [
+    {
+      "ajourholdstidspunkt": "2022-02-04T10:26:53.738086Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2019-11-07T10:26:53.738101Z",
+      "sivilstand": "ugift",
+      "sivilstandsdato": "2019-11-07"
+    }
+  ],
+  "navn": [
+    {
+      "ajourholdstidspunkt": "2022-02-04T10:26:53.792188Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "2022-02-04T10:26:53.792185Z",
+      "fornavn": "INTERESSANT",
+      "etternavn": "PERSEPSJON"
+    }
+  ],
+  "bostedsadresse": [
+    {
+      "ajourholdstidspunkt": "2022-02-04T10:26:55.130992Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Flytting innenlands",
+      "gyldighetstidspunkt": "2022-02-03T23:00:00Z",
+      "vegadresse": {
+        "kommunenummer": "4649",
+        "bruksenhetsnummer": "H0101",
+        "bruksenhetstype": "bolig",
+        "adressenavn": "Røysetvegen",
+        "adressenummer": {
+          "husnummer": "410"
+        },
+        "adressekode": "4650",
+        "poststed": {
+          "poststedsnavn": "BARMEN",
+          "postnummer": "6715"
+        }
+      },
+      "adresseIdentifikatorFraMatrikkelen": "99777627",
+      "adressegradering": "ugradert",
+      "flyttedato": "2022-02-04",
+      "grunnkrets": 407,
+      "stemmekrets": 1,
+      "skolekrets": 7,
+      "kirkekrets": 1
+    }
+  ],
+  "foreldreansvar": [
+    {
+      "ajourholdstidspunkt": "2022-02-04T10:26:54.75717Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2019-11-06T23:00:00Z",
+      "ansvar": "felles",
+      "ansvarssubjekt": "07911998224",
+      "ansvarlig": "25929297736"
+    },
+    {
+      "ajourholdstidspunkt": "2022-02-04T10:26:54.679707Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2019-11-06T23:00:00Z",
+      "ansvar": "felles",
+      "ansvarssubjekt": "07911998224",
+      "ansvarlig": "25819499821"
+    }
+  ],
+  "statsborgerskap": [
+    {
+      "ajourholdstidspunkt": "2022-02-04T10:26:53.831747Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2019-11-07T10:26:53.831766Z",
+      "statsborgerskap": "NOR",
+      "ervervsdato": "2019-11-07"
+    }
+  ]
+}
