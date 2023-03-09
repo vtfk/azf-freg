@@ -1,0 +1,256 @@
+{
+  "identifikasjonsnummer": [
+    {
+      "ajourholdstidspunkt": "2020-12-22T16:09:23.015Z",
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "status": "iBruk",
+      "foedselsEllerDNummer": "21860398300",
+      "identifikatortype": "foedselsnummer"
+    }
+  ],
+  "status": [
+    {
+      "ajourholdstidspunkt": "2020-12-22T16:09:23.015Z",
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "gyldighetstidspunkt": "2020-12-22T16:09:23.015Z",
+      "status": "bosatt"
+    }
+  ],
+  "kjoenn": [
+    {
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "kjoenn": "mann"
+    }
+  ],
+  "foedsel": [
+    {
+      "ajourholdstidspunkt": "2022-02-14T08:19:03.89513Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "gyldighetstidspunkt": "2003-06-21T08:19:03.895125Z",
+      "foedselsdato": "2003-06-21",
+      "foedselsaar": "2003",
+      "foedekommuneINorge": "5001",
+      "foedeland": "NOR"
+    }
+  ],
+  "foedselINorge": [
+    {
+      "ajourholdstidspunkt": "2022-02-14T08:19:04.035992Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2003-06-21T08:19:04.035992Z",
+      "foedselsinstitusjonsnavn": "Minst Testinstitusjon",
+      "rekkefoelgenummer": 11
+    }
+  ],
+  "familierelasjon": [
+    {
+      "ajourholdstidspunkt": "2022-11-25T08:01:38.546043Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2022-11-24T23:00:00Z",
+      "relatertPerson": "25912299921",
+      "relatertPersonsRolle": "barn",
+      "minRolleForPerson": "far"
+    },
+    {
+      "ajourholdstidspunkt": "2022-11-05T08:03:36.32948Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2022-11-04T23:00:00Z",
+      "relatertPersonUtenFolkeregisteridentifikator": {
+        "navn": {
+          "fornavn": "KOMPLETT*GUTT",
+          "etternavn": "DROMEDAR"
+        },
+        "foedselsdato": "2022-11-05",
+        "kjoenn": "mann"
+      },
+      "relatertPersonsRolle": "doedfoedtBarn",
+      "minRolleForPerson": "far"
+    },
+    {
+      "ajourholdstidspunkt": "2022-08-09T05:02:24.788875Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Vigsel",
+      "gyldighetstidspunkt": "2022-08-08T22:00:00Z",
+      "relatertPerson": "01890097401",
+      "relatertPersonsRolle": "ektefelleEllerPartner",
+      "minRolleForPerson": "ektefelleEllerPartner"
+    },
+    {
+      "ajourholdstidspunkt": "2022-02-14T08:19:03.301815Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "2003-06-20T23:00:00Z",
+      "relatertPerson": "23817397522",
+      "relatertPersonsRolle": "far",
+      "minRolleForPerson": "barn"
+    },
+    {
+      "ajourholdstidspunkt": "2022-02-14T08:19:03.161215Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "2003-06-20T23:00:00Z",
+      "relatertPerson": "13897196675",
+      "relatertPersonsRolle": "mor",
+      "minRolleForPerson": "barn"
+    }
+  ],
+  "sivilstand": [
+    {
+      "ajourholdstidspunkt": "2022-08-09T05:02:45.015304Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Vigsel",
+      "gyldighetstidspunkt": "2022-08-08T22:00:00Z",
+      "sivilstand": "gift",
+      "sivilstandsdato": "2022-08-09",
+      "myndighet": "DEN_NORSKE_KIRKE",
+      "sted": "God Testkirke",
+      "utland": "NOR",
+      "relatertVedSivilstand": "01890097401"
+    },
+    {
+      "ajourholdstidspunkt": "2022-02-14T08:19:04.142844Z",
+      "erGjeldende": false,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2003-06-21T08:19:04.142867Z",
+      "sivilstand": "ugift",
+      "sivilstandsdato": "2003-06-21"
+    }
+  ],
+  "navn": [
+    {
+      "ajourholdstidspunkt": "2022-08-09T05:02:24.788906Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Navn",
+      "gyldighetstidspunkt": "2022-08-09T05:02:24.788898Z",
+      "fornavn": "ORDKNAPP",
+      "mellomnavn": "KAROSSERI",
+      "etternavn": "DROMEDAR"
+    }
+  ],
+  "adressebeskyttelse": [
+    {
+      "ajourholdstidspunkt": "2023-01-06T07:00:50.488208Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Adressebeskyttelse",
+      "gyldighetstidspunkt": "2023-01-05T23:00:00Z",
+      "graderingsnivaa": "strengtFortrolig"
+    }
+  ],
+  "bostedsadresse": [
+    {
+      "ajourholdstidspunkt": "2023-01-06T07:00:49.48541Z",
+      "erGjeldende": false,
+      "kilde": "Synutopia",
+      "aarsak": "Flytting innenlands",
+      "gyldighetstidspunkt": "2022-08-08T22:00:00Z",
+      "opphoerstidspunkt": "2023-01-06T07:00:49.485404Z",
+      "vegadresse": {
+        "kommunenummer": "1576",
+        "bruksenhetsnummer": "H0101",
+        "bruksenhetstype": "bolig",
+        "adressenavn": "Mjosundvegen",
+        "adressenummer": {
+          "husnummer": "1851"
+        },
+        "adressekode": "76072",
+        "poststed": {
+          "poststedsnavn": "FOLDFJORDEN",
+          "postnummer": "6694"
+        }
+      },
+      "adresseIdentifikatorFraMatrikkelen": "236935486",
+      "adressegradering": "ugradert",
+      "flyttedato": "2022-08-09",
+      "grunnkrets": 111,
+      "stemmekrets": 5,
+      "skolekrets": 2,
+      "kirkekrets": 1
+    },
+    {
+      "ajourholdstidspunkt": "2022-02-14T08:19:04.354022Z",
+      "erGjeldende": false,
+      "kilde": "Synutopia",
+      "aarsak": "Flytting innenlands",
+      "gyldighetstidspunkt": "2022-02-13T23:00:00Z",
+      "vegadresse": {
+        "kommunenummer": "1579",
+        "bruksenhetsnummer": "H0101",
+        "bruksenhetstype": "bolig",
+        "adressenavn": "Mellavegen",
+        "adressenummer": {
+          "husnummer": "6"
+        },
+        "adressekode": "1518",
+        "poststed": {
+          "poststedsnavn": "TORNES I ROMSDAL",
+          "postnummer": "6443"
+        }
+      },
+      "adresseIdentifikatorFraMatrikkelen": "411839326",
+      "adressegradering": "ugradert",
+      "flyttedato": "2022-02-14",
+      "grunnkrets": 102,
+      "stemmekrets": 1,
+      "skolekrets": 1,
+      "kirkekrets": 5
+    }
+  ],
+  "postadresse": [
+    {
+      "ajourholdstidspunkt": "2023-01-06T07:00:49.48541Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Adressebeskyttelse",
+      "gyldighetstidspunkt": "2023-01-06T07:00:49.485404Z",
+      "adressegradering": "ugradert",
+      "postboksadresse": {
+        "postbokseier": "SOT 6",
+        "postboks": "Postboks 2094 Vika",
+        "poststed": {
+          "poststedsnavn": "OSLO",
+          "postnummer": "0125"
+        }
+      }
+    }
+  ],
+  "foreldreansvar": [
+    {
+      "ajourholdstidspunkt": "2022-11-25T08:01:38.546043Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2022-11-24T23:00:00Z",
+      "ansvar": "felles",
+      "ansvarssubjekt": "25912299921",
+      "ansvarlig": "21860398300"
+    }
+  ],
+  "statsborgerskap": [
+    {
+      "ajourholdstidspunkt": "2022-02-14T08:19:04.202046Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2003-06-21T08:19:04.202065Z",
+      "statsborgerskap": "NOR",
+      "ervervsdato": "2003-06-21"
+    }
+  ]
+}

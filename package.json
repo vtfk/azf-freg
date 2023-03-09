@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "start": "func start",
-    "test": "echo \"No tests yet...\""
+    "test": "standard && jest",
+    "test:local": "jest --verbose",
+    "test:lint": "standard"
   },
   "dependencies": {
     "@vtfk/logger": "^4.3.2",
@@ -14,6 +16,8 @@
     "node-cache": "^5.1.2"
   },
   "devDependencies": {
-    "azure-functions-core-tools": "^4.x"
+    "@types/jest": "^29.4.0",
+    "azure-functions-core-tools": "^4.x",
+    "jest": "^29.5.0"
   }
 }

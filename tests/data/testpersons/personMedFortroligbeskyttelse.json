@@ -1,0 +1,255 @@
+{
+  "identifikasjonsnummer": [
+    {
+      "ajourholdstidspunkt": "2021-11-22T15:15:29.834904Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-22T15:15:29.834898Z",
+      "status": "iBruk",
+      "foedselsEllerDNummer": "19912193449",
+      "identifikatortype": "foedselsnummer"
+    },
+    {
+      "ajourholdstidspunkt": "2021-11-22T15:15:29.834904Z",
+      "erGjeldende": false,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-22T15:15:29.834898Z",
+      "status": "opphoert",
+      "foedselsEllerDNummer": "22912195205",
+      "identifikatortype": "foedselsnummer"
+    },
+    {
+      "ajourholdstidspunkt": "2021-11-22T15:15:29.834904Z",
+      "erGjeldende": false,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-22T15:15:29.834898Z",
+      "status": "opphoert",
+      "foedselsEllerDNummer": "22912195124",
+      "identifikatortype": "foedselsnummer"
+    }
+  ],
+  "status": [
+    {
+      "ajourholdstidspunkt": "2021-11-22T15:15:30.158432Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-22T15:15:29.834898Z",
+      "status": "bosatt"
+    }
+  ],
+  "kjoenn": [
+    {
+      "ajourholdstidspunkt": "2021-11-22T15:15:29.834904Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-22T15:15:29.834898Z",
+      "kjoenn": "kvinne"
+    }
+  ],
+  "foedsel": [
+    {
+      "ajourholdstidspunkt": "2022-02-02T15:13:48.960765Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-19T15:13:48.960753Z",
+      "foedselsdato": "2021-11-19",
+      "foedselsaar": "2021",
+      "foedested": "Teststed",
+      "foedekommuneINorge": "1875",
+      "foedeland": "NOR"
+    }
+  ],
+  "foedselINorge": [
+    {
+      "ajourholdstidspunkt": "2022-02-02T13:16:30.603551Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-19T13:16:30.603556Z",
+      "foedselsinstitusjonsnavn": "Lattermild Testinstitusjon",
+      "rekkefoelgenummer": 11
+    }
+  ],
+  "familierelasjon": [
+    {
+      "ajourholdstidspunkt": "2022-02-02T13:16:30.116163Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "2021-11-18T23:00:00Z",
+      "relatertPerson": "07919697150",
+      "relatertPersonsRolle": "far",
+      "minRolleForPerson": "barn"
+    },
+    {
+      "ajourholdstidspunkt": "2022-02-02T13:16:29.912015Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "2021-11-18T23:00:00Z",
+      "relatertPerson": "01889897674",
+      "relatertPersonsRolle": "mor",
+      "minRolleForPerson": "barn"
+    }
+  ],
+  "sivilstand": [
+    {
+      "ajourholdstidspunkt": "2022-02-02T13:16:30.64807Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-19T13:16:30.648089Z",
+      "sivilstand": "ugift",
+      "sivilstandsdato": "2021-11-19"
+    }
+  ],
+  "navn": [
+    {
+      "ajourholdstidspunkt": "2022-02-02T13:16:31.088945Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "2022-02-02T13:16:31.088943Z",
+      "fornavn": "AKROBATISK",
+      "etternavn": "GÅSTOL"
+    }
+  ],
+  "adressebeskyttelse": [
+    {
+      "ajourholdstidspunkt": "2023-01-01T07:01:10.737811Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Adressebeskyttelse",
+      "gyldighetstidspunkt": "2022-12-31T23:00:00Z",
+      "graderingsnivaa": "fortrolig"
+    }
+  ],
+  "bostedsadresse": [
+    {
+      "ajourholdstidspunkt": "2023-01-01T07:01:11.019447Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Flytting innenlands",
+      "gyldighetstidspunkt": "2022-12-31T23:00:00Z",
+      "vegadresse": {
+        "kommunenummer": "4618",
+        "bruksenhetsnummer": "H0101",
+        "bruksenhetstype": "bolig",
+        "adressenavn": "Odlandsvegen",
+        "adressenummer": {
+          "husnummer": "87"
+        },
+        "adressekode": "3775",
+        "poststed": {
+          "poststedsnavn": "RØLDAL",
+          "postnummer": "5760"
+        }
+      },
+      "adresseIdentifikatorFraMatrikkelen": "329355742",
+      "adressegradering": "fortrolig",
+      "flyttedato": "2023-01-01",
+      "grunnkrets": 105,
+      "stemmekrets": 4,
+      "skolekrets": 4,
+      "kirkekrets": 4
+    },
+    {
+      "ajourholdstidspunkt": "2023-01-01T07:01:08.756924Z",
+      "erGjeldende": false,
+      "kilde": "Synutopia",
+      "aarsak": "Flytting innenlands",
+      "gyldighetstidspunkt": "2022-02-01T23:00:00Z",
+      "vegadresse": {
+        "kommunenummer": "3407",
+        "bruksenhetsnummer": "H0101",
+        "bruksenhetstype": "bolig",
+        "adressenavn": "Brusvehagen",
+        "adressenummer": {
+          "husnummer": "10"
+        },
+        "adressekode": "5500",
+        "poststed": {
+          "poststedsnavn": "GJØVIK",
+          "postnummer": "2821"
+        }
+      },
+      "adresseIdentifikatorFraMatrikkelen": "592464393",
+      "adressegradering": "fortrolig",
+      "flyttedato": "2022-02-02",
+      "grunnkrets": 810,
+      "stemmekrets": 3,
+      "skolekrets": 1,
+      "kirkekrets": 2
+    }
+  ],
+  "oppholdsadresse": [
+    {
+      "ajourholdstidspunkt": "2023-01-01T07:01:08.756924Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Oppholdsadresse og opphold annet sted",
+      "gyldighetstidspunkt": "2021-12-25T23:00:00Z",
+      "adressenErUkjent": true,
+      "adressegradering": "fortrolig",
+      "oppholdsadressedato": "2021-12-26",
+      "oppholdAnnetSted": "utenriks"
+    }
+  ],
+  "postadresse": [
+    {
+      "ajourholdstidspunkt": "2023-01-01T07:01:08.756924Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Oppholdsadresse og opphold annet sted",
+      "gyldighetstidspunkt": "2021-12-25T23:00:00Z",
+      "adressegradering": "fortrolig",
+      "postboksadresse": {
+        "postbokseier": "Trist Balsam",
+        "postboks": "Test 262",
+        "poststed": {
+          "poststedsnavn": "SÆTRE",
+          "postnummer": "3475"
+        }
+      }
+    }
+  ],
+  "foreldreansvar": [
+    {
+      "ajourholdstidspunkt": "2022-02-02T15:13:49.266646Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-18T23:00:00Z",
+      "ansvar": "felles",
+      "ansvarssubjekt": "19912193449",
+      "ansvarlig": "07919697150"
+    },
+    {
+      "ajourholdstidspunkt": "2022-02-02T15:13:49.150533Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-18T23:00:00Z",
+      "ansvar": "felles",
+      "ansvarssubjekt": "19912193449",
+      "ansvarlig": "01889897674"
+    }
+  ],
+  "statsborgerskap": [
+    {
+      "ajourholdstidspunkt": "2022-02-02T13:16:31.140659Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "2021-11-19T13:16:31.140678Z",
+      "statsborgerskap": "NOR",
+      "ervervsdato": "2021-11-19"
+    }
+  ]
+}

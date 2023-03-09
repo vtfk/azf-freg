@@ -1,0 +1,140 @@
+{
+  "identifikasjonsnummer": [
+    {
+      "ajourholdstidspunkt": "2020-12-22T16:08:31.444Z",
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "status": "iBruk",
+      "foedselsEllerDNummer": "08871748471",
+      "identifikatortype": "foedselsnummer"
+    }
+  ],
+  "status": [
+    {
+      "ajourholdstidspunkt": "2020-12-22T16:08:31.444Z",
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "gyldighetstidspunkt": "2020-12-22T16:08:31.444Z",
+      "status": "bosatt"
+    }
+  ],
+  "kjoenn": [
+    {
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "kjoenn": "kvinne"
+    }
+  ],
+  "foedsel": [
+    {
+      "ajourholdstidspunkt": "2022-03-23T06:14:20.216833Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "gyldighetstidspunkt": "1917-07-08T06:14:20.216828Z",
+      "foedselsdato": "1917-07-08",
+      "foedselsaar": "1917",
+      "foedekommuneINorge": "3024",
+      "foedeland": "NOR"
+    }
+  ],
+  "foedselINorge": [
+    {
+      "ajourholdstidspunkt": "2022-03-23T06:14:20.24755Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "1917-07-08T06:14:20.24755Z",
+      "foedselsinstitusjonsnavn": "Fattig Testinstitusjon",
+      "rekkefoelgenummer": 11
+    }
+  ],
+  "familierelasjon": [
+    {
+      "ajourholdstidspunkt": "2022-04-26T05:37:48.780205Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "1949-09-29T05:37:48.396909Z",
+      "relatertPerson": "21891848541",
+      "relatertPersonsRolle": "ektefelleEllerPartner",
+      "minRolleForPerson": "ektefelleEllerPartner"
+    },
+    {
+      "ajourholdstidspunkt": "2022-03-23T06:14:19.81221Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "1943-05-15T23:00:00Z",
+      "relatertPerson": "16854395614",
+      "relatertPersonsRolle": "barn",
+      "minRolleForPerson": "mor"
+    }
+  ],
+  "sivilstand": [
+    {
+      "ajourholdstidspunkt": "2022-04-26T05:37:48.396911Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "1949-09-29T05:37:48.396909Z",
+      "sivilstand": "gift",
+      "sivilstandsdato": "1949-09-29",
+      "myndighet": "DEN_NORSKE_KIRKE",
+      "kommune": "3001",
+      "sted": "Hensynsfull Testkirke",
+      "relatertVedSivilstand": "21891848541"
+    }
+  ],
+  "navn": [
+    {
+      "ajourholdstidspunkt": "2022-03-23T06:14:20.280222Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "2022-03-23T06:14:20.280217Z",
+      "fornavn": "MINKENDE",
+      "etternavn": "DREGG"
+    }
+  ],
+  "bostedsadresse": [
+    {
+      "ajourholdstidspunkt": "2022-04-26T05:37:49.107285Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Flytting innenlands",
+      "gyldighetstidspunkt": "2022-04-25T22:00:00Z",
+      "vegadresse": {
+        "kommunenummer": "4624",
+        "bruksenhetsnummer": "H0101",
+        "bruksenhetstype": "bolig",
+        "adressenavn": "Skipavika",
+        "adressenummer": {
+          "husnummer": "88"
+        },
+        "adressekode": "1177",
+        "poststed": {
+          "poststedsnavn": "NORDSTRØNO",
+          "postnummer": "5218"
+        }
+      },
+      "adresseIdentifikatorFraMatrikkelen": "151739722",
+      "adressegradering": "ugradert",
+      "flyttedato": "2022-04-26",
+      "grunnkrets": 201,
+      "stemmekrets": 5,
+      "skolekrets": 3,
+      "kirkekrets": 1
+    }
+  ],
+  "statsborgerskap": [
+    {
+      "ajourholdstidspunkt": "2022-03-23T06:14:20.312837Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "1917-07-08T06:14:20.312852Z",
+      "statsborgerskap": "NOR",
+      "ervervsdato": "1917-07-08"
+    }
+  ]
+}
