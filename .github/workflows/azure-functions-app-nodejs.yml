@@ -22,8 +22,7 @@ name: Deploy Node.js project to Azure Function App
 
 on:
   push:
-    branches:
-    - ["main"]
+    branches: "main"
 
 env:
   AZURE_FUNCTIONAPP_NAME: 'test-func-freg-api'   # set this to your function app name on Azure
