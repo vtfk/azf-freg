@@ -16,7 +16,7 @@ module.exports = async function (context, req) {
   const decoded = decodeAccessToken(req.headers.authorization)
   if (!decoded.verified) return { status: 401, body: decoded.msg }
   logConfig({
-    prefix: `azf-freg - Personer - ${decoded.appid}${decoded.upn ? ' - '+ decoded.upn : ''}`,
+    prefix: `azf-freg - Personer - ${decoded.appid}${decoded.upn ? ' - ' + decoded.upn : ''}`,
     azure: {
       context,
       excludeInvocationId: true
