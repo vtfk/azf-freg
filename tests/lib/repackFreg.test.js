@@ -5,7 +5,7 @@ const personMedBostedsdresse = require('../data/testpersons/personMedBostedsadre
 const personMedPostdresseOgBostedsadresse = require('../data/testpersons/personMedPostadresseOgBostedsadresse.json')
 const personMedAdressebeskyttelse = require('../data/testpersons/personMedAddressebeskyttelse.json') // denne har strengt fortrolig adresse
 const personMedFortroligbeskyttelse = require('../data/testpersons/personMedFortroligbeskyttelse.json')
-const personMedUtenlandskAdresse = require('../data/testpersons/personMedUtenlandskAdresse.json')
+const personMedUtenlandskAdresse = require('../data/testpersons/personMedUtenlandskadresse.json')
 const personMedForeldreansvar = require('../data/testpersons/personMedForeldreansvar.json')
 
 describe('Adresser blir repacked som forventet når', () => {
