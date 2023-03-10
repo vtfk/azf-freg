@@ -2,7 +2,8 @@ module.exports = {
   env: process.env.NODE_ENV ?? 'dev',
   certificate: {
     pfxPath: process.env.CERTIFICATE_PFX_PATH ?? 'ukjent sti',
-    passphrase: process.env.CERTIFICATE_PASSPHRASE ?? 'ukent frase gitt'
+    passphrase: process.env.CERTIFICATE_PASSPHRASE ?? 'ukjent frase gitt',
+    pfxBase64: process.env.CERTIFICATE_PFX_BASE64 ?? 'ukjent pfxBase64'
   },
   maskinporten: {
     medHjemmelScope: process.env.MASKINPORTEN_MED_HJEMMEL_SCOPE ?? 'et skup',
