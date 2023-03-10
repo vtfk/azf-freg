@@ -10,5 +10,5 @@ Azure function for calling freg
 [Spørsmål og svar](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/sporsmal-og-svar/)
 [Informasjonsmodell](https://skatteetaten.github.io/folkeregisteret-api-dokumentasjon/informasjonsmodell/)
 
-Funksjonen tar seg ikke av autentisering. Dette må gjøres av AzureAD eller Apim
+Funksjonen tar seg ikke av autentisering. Dette må gjøres av AzureAD eller Apim.
 
