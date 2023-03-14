@@ -10,7 +10,7 @@ const personMedForeldreansvar = require('../data/testpersons/personMedForeldrean
 
 describe('Adresser blir repacked som forventet når', () => {
   test('Person har bostedadresse, og ikke postadresse', () => {
-    const { repacked } = repackFreg(personMedBostedsdresse)
+    const repacked = repackFreg(personMedBostedsdresse)
     expect(repacked.bostedsadresse.gateadresse).toBe('Skipavika 88')
     expect(repacked.bostedsadresse.poststed).toBe('NORDSTRØNO')
     expect(repacked.bostedsadresse.postnummer).toBe('5218')
@@ -20,7 +20,7 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresse.postnummer).toBe(repacked.bostedsadresse.postnummer)
   })
   test('Person har postadresse og bostedsadresse med husbokstav, og postadresse i utlandet', () => {
-    const { repacked } = repackFreg(personMedPostdresseOgBostedsadresse)
+    const repacked = repackFreg(personMedPostdresseOgBostedsadresse)
     expect(repacked.bostedsadresse.gateadresse).toBe('Skolegata 30B')
     expect(repacked.bostedsadresse.poststed).toBe('STRØMMEN')
     expect(repacked.bostedsadresse.postnummer).toBe('2010')
@@ -36,7 +36,7 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresseIUtlandet.adressegradering).toBe('ugradert')
   })
   test('Person har utenlandsk adresse (ikke i fritt format)', () => {
-    const { repacked } = repackFreg(personMedUtenlandskAdresse)
+    const repacked = repackFreg(personMedUtenlandskAdresse)
     expect(repacked.postadresseIUtlandet.gateadresse).toBe('Erik Nilsson, Gatan 10')
     expect(repacked.postadresseIUtlandet.poststed).toBe('Gothenburg, Västre Götaland')
     expect(repacked.postadresseIUtlandet.postnummer).toBe('SE-412 50')
@@ -44,7 +44,7 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresseIUtlandet.adressegradering).toBe('ugradert')
   })
   test('Person har adressebeskyttelse strengtFortrolig', () => {
-    const { repacked } = repackFreg(personMedAdressebeskyttelse)
+    const repacked = repackFreg(personMedAdressebeskyttelse)
     expect(repacked.bostedsadresse).toBe(null)
     expect(repacked.postadresse.gateadresse).toBe('SOT 6, Postboks 2094 Vika')
     expect(repacked.postadresse.poststed).toBe('OSLO')
@@ -52,7 +52,7 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresse.adressegradering).toBe('ugradert')
   })
   test('Person har adressebeskyttelse fortrolig - uten option "includeFortrolig"', () => {
-    const { repacked } = repackFreg(personMedFortroligbeskyttelse)
+    const repacked = repackFreg(personMedFortroligbeskyttelse)
     expect(repacked.bostedsadresse.gateadresse).toBe('Fortrolig adresse')
     expect(repacked.bostedsadresse.poststed).toBe('UKJENT')
     expect(repacked.bostedsadresse.postnummer).toBe('9999')
@@ -63,7 +63,7 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresse.adressegradering).toBe('fortrolig')
   })
   test('Person har adressebeskyttelse fortrolig - med option "includeFortrolig"', () => {
-    const { repacked } = repackFreg(personMedFortroligbeskyttelse, { includeFortrolig: true })
+    const repacked = repackFreg(personMedFortroligbeskyttelse, { includeFortrolig: true })
     expect(repacked.bostedsadresse.gateadresse).toBe('Odlandsvegen 87')
     expect(repacked.bostedsadresse.poststed).toBe('RØLDAL')
     expect(repacked.bostedsadresse.postnummer).toBe('5760')
@@ -77,7 +77,7 @@ describe('Adresser blir repacked som forventet når', () => {
 
 describe('Navn, adressebeskyttelse, alder, foedselsdato, foedselsEllerDNummer blir hentet som forventet når', () => {
   test('Person ikke har adressebeskyttelse', () => {
-    const { repacked } = repackFreg(personMedBostedsdresse)
+    const repacked = repackFreg(personMedBostedsdresse)
     expect(repacked.fulltnavn).toBe('Minkende Dregg')
     expect(repacked.adressebeskyttelse.length).toBe(0)
     expect(repacked.foedselsdato).toBe('1917-07-08')
@@ -85,11 +85,11 @@ describe('Navn, adressebeskyttelse, alder, foedselsdato, foedselsEllerDNummer bl
     expect(!isNaN(repacked.alder)).toBe(true)
   })
   test('Person har addressebeskyttelse fortrolig', () => {
-    const { repacked } = repackFreg(personMedFortroligbeskyttelse)
+    const repacked = repackFreg(personMedFortroligbeskyttelse)
     expect(repacked.adressebeskyttelse[0]).toBe('fortrolig')
   })
   test('Person har addressebeskyttelse strengt fortrolig og har mellomnavn', () => {
-    const { repacked } = repackFreg(personMedAdressebeskyttelse)
+    const repacked = repackFreg(personMedAdressebeskyttelse)
     expect(repacked.adressebeskyttelse[0]).toBe('strengtFortrolig')
     expect(repacked.fulltnavn).toBe('Ordknapp Karosseri Dromedar')
   })
@@ -97,15 +97,15 @@ describe('Navn, adressebeskyttelse, alder, foedselsdato, foedselsEllerDNummer bl
 
 describe('Foreldreansvar', () => {
   test('Blir hentet når includeForeldreansvar er true', () => {
-    const { repacked } = repackFreg(personMedForeldreansvar, { includeForeldreansvar: true })
+    const repacked = repackFreg(personMedForeldreansvar, { includeForeldreansvar: true })
     expect(repacked.foreldreansvar.length).toBe(2)
   })
   test('Ikke blir med når includeForeldreansvar er false', () => {
-    const { repacked } = repackFreg(personMedForeldreansvar)
+    const repacked = repackFreg(personMedForeldreansvar)
     expect(repacked.foreldreansvar).toBeFalsy()
   })
   test('Tom liste blir med når includeForeldreansvar er true og person ikke har noe foreldreansvar', () => {
-    const { repacked } = repackFreg(personMedBostedsdresse, { includeForeldreansvar: true })
+    const repacked = repackFreg(personMedBostedsdresse, { includeForeldreansvar: true })
     expect(repacked.foreldreansvar.length).toBe(0)
   })
 })
