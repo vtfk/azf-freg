@@ -26,7 +26,7 @@ module.exports = async function (context, req) {
   let accessToken
   try {
     accessToken = await getAccessToken()
-    return {status: 200, accessToken}
+    return {status: 200, body: accessToken}
   } catch (error) {
     logger('error', ['error when getting access token', error.response])
     return { status: 500, body: error.toString() }
