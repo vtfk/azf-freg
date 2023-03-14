@@ -3,6 +3,7 @@ const axios = require('axios')
 const repack = require('../lib/repackFreg')
 const decodeAccessToken = require('../lib/decodeAadToken')
 const { logConfig, logger } = require('@vtfk/logger')
+const { freg } = require('../config')
 
 module.exports = async function (context, req) {
   logConfig({
@@ -27,23 +28,24 @@ module.exports = async function (context, req) {
   try {
     accessToken = await getAccessToken()
   } catch (error) {
-    logger('error', ['error when getting access token', error.response])
+    logger('error', ['error when getting access token', error.toString()])
     return { status: 500, body: error.toString() }
   }
 
   if (!req.body) return { status: 400, body: 'Body is missing' }
-  const { ssn, includeFortrolig, includeForeldreansvar } = req.body
+  const { ssn, includeRawFreg, includeFortrolig, includeForeldreansvar } = req.body
 
   if (!ssn) return { status: 400, body: 'Body is missing required property "ssn"' }
   if (ssn.length !== 11) return { status: 400, body: 'Property "ssn" must be lenght 11' }
 
   const options = {
+    includeRawFreg: includeRawFreg || false,
     includeFortrolig: includeFortrolig || false,
     includeForeldreansvar: includeForeldreansvar || false
   }
 
   const defaultParts = 'part=person-basis&part=relasjon-utvidet'
-  const url = `https://folkeregisteret-api-konsument.sits.no/folkeregisteret/offentlig-med-hjemmel/api/v1/personer/${ssn}?${defaultParts}`
+  const url = `${freg.url}/${freg.rettighet}/api/v1/personer/${ssn}?${defaultParts}`
 
   try {
     const headers = {
@@ -58,7 +60,7 @@ module.exports = async function (context, req) {
     logger('info', ['successfully repacked result'])
     return { status: 200, body: repacked }
   } catch (error) {
-    logger('error', ['error when calling freg', error.response])
+    logger('error', ['error when calling freg', error.toString()])
     return { status: 500, body: error.toString() }
   }
 }

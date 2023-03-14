@@ -13,7 +13,7 @@ module.exports = {
     tokenUrl: process.env.MASKINPORTEN_TOKEN_URL ?? 'token.com'
   },
   freg: {
-    url: process.env.FREG_URL ?? 'www.vg.no',
-    rettighetUrl: process.env.FREG_RETTIGHET_URL ?? '/rettigheter'
+    url: process.env.FREG_URL ?? 'www.vg.vg.vg.no',
+    rettighet: process.env.FREG_RETTIGHET ?? 'rettighet'
   }
 }
