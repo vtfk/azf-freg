@@ -4,14 +4,13 @@
   "description": "",
   "scripts": {
     "start": "func start",
-    "_test": "standard && jest",
-    "test": "jest",
+    "test": "standard && jest",
     "test:local": "jest --verbose",
     "test:lint": "standard"
   },
   "dependencies": {
     "@vtfk/logger": "^4.3.2",
-    "@vtfk/maskinporten-auth": "^2.0.2",
+    "@vtfk/maskinporten-auth": "^2.0.4",
     "axios": "^1.3.4",
     "capitalize": "^2.0.4",
     "jsonwebtoken": "^9.0.0",
