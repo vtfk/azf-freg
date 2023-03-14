@@ -4,7 +4,8 @@
   "description": "",
   "scripts": {
     "start": "func start",
-    "test": "standard && jest",
+    "_test": "standard && jest",
+    "test": "jest",
     "test:local": "jest --verbose",
     "test:lint": "standard"
   },
