@@ -76,6 +76,7 @@ Headers: {
 	"postadresseIUtlandet": null
 }
 ```
+If person with {ssn} is not found - api returns 404
 
 ### Optional parameters
 **includeRawFreg** - boolean
