@@ -1,0 +1,173 @@
+{
+  "identifikasjonsnummer": [
+    {
+      "ajourholdstidspunkt": "2020-12-22T16:08:33.587Z",
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "status": "iBruk",
+      "foedselsEllerDNummer": "09814997283",
+      "identifikatortype": "foedselsnummer"
+    }
+  ],
+  "status": [
+    {
+      "ajourholdstidspunkt": "2020-12-22T16:08:33.587Z",
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "gyldighetstidspunkt": "2020-12-22T16:08:33.587Z",
+      "status": "bosatt"
+    }
+  ],
+  "kjoenn": [
+    {
+      "erGjeldende": true,
+      "kilde": "KILDE_DSF",
+      "kjoenn": "kvinne"
+    }
+  ],
+  "foedsel": [
+    {
+      "ajourholdstidspunkt": "2022-03-22T10:36:47.877255Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "gyldighetstidspunkt": "1949-01-09T10:36:47.877253Z",
+      "foedselsdato": "1949-01-09",
+      "foedselsaar": "1949",
+      "foedekommuneINorge": "5435",
+      "foedeland": "NOR"
+    }
+  ],
+  "foedselINorge": [
+    {
+      "ajourholdstidspunkt": "2022-03-22T10:36:47.977087Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "1949-01-09T10:36:47.977087Z",
+      "foedselsinstitusjonsnavn": "Talefør Testinstitusjon",
+      "rekkefoelgenummer": 11
+    }
+  ],
+  "familierelasjon": [
+    {
+      "ajourholdstidspunkt": "2022-03-22T10:36:47.236505Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "1949-01-08T23:00:00Z",
+      "relatertPerson": "19921847788",
+      "relatertPersonsRolle": "far",
+      "minRolleForPerson": "barn"
+    },
+    {
+      "ajourholdstidspunkt": "2022-03-22T10:36:47.037712Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "1949-01-08T23:00:00Z",
+      "relatertPerson": "03852047290",
+      "relatertPersonsRolle": "mor",
+      "minRolleForPerson": "barn"
+    }
+  ],
+  "sivilstand": [
+    {
+      "ajourholdstidspunkt": "2022-03-22T10:36:48.190616Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "1949-01-09T10:36:48.190634Z",
+      "sivilstand": "ugift",
+      "sivilstandsdato": "1949-01-09"
+    }
+  ],
+  "navn": [
+    {
+      "ajourholdstidspunkt": "2022-03-22T10:36:48.070451Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Patch",
+      "gyldighetstidspunkt": "2022-03-22T10:36:48.070449Z",
+      "fornavn": "SMISKENDE",
+      "etternavn": "BØNNE"
+    }
+  ],
+  "bostedsadresse": [
+    {
+      "ajourholdstidspunkt": "2022-03-22T10:36:48.403666Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Flytting innenlands",
+      "gyldighetstidspunkt": "2022-03-21T23:00:00Z",
+      "vegadresse": {
+        "kommunenummer": "3030",
+        "bruksenhetsnummer": "H0101",
+        "bruksenhetstype": "bolig",
+        "adressenavn": "Skolegata",
+        "adressenummer": {
+          "husnummer": "30",
+          "husbokstav": "B"
+        },
+        "adressekode": "12550",
+        "poststed": {
+          "poststedsnavn": "STRØMMEN",
+          "postnummer": "2010"
+        }
+      },
+      "adresseIdentifikatorFraMatrikkelen": "92265250",
+      "adressegradering": "ugradert",
+      "flyttedato": "2022-03-22",
+      "grunnkrets": 806,
+      "stemmekrets": 9,
+      "skolekrets": 3,
+      "kirkekrets": 1
+    }
+  ],
+  "postadresse": [
+    {
+      "adressegradering": "UGRADERT",
+      "erGjeldende": true,
+      "gyldighetstidspunkt": "2016-10-11T22:00:00Z",
+      "kilde": "Synutopia",
+      "postadresseIFrittFormat": {
+        "adresselinje": [
+          "POSTBOKS 146 BLEIE"
+        ],
+        "poststed": {
+          "poststedsnavn": "GUGGENHEIM",
+          "postnummer": "3222"
+        }
+      }
+    }
+  ],
+  "postadresseIUtlandet": [
+    {
+      "ajourholdstidspunkt": "2021-10-15T10:21:43.227703Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Postadresse",
+      "gyldighetstidspunkt": "2021-10-15T10:21:43.227693Z",
+      "adressegradering": "ugradert",
+      "utenlandskAdresseIFrittFormat": {
+        "adresselinje": [
+          "Testadresselinje 1",
+          "Testadresselinje 2"
+        ],
+        "postkode": "Testpostkode utland 55",
+        "byEllerStedsnavn": "Litt testby- eller stedsnavn",
+        "landkode": "CV"
+      }
+    }
+  ],
+  "statsborgerskap": [
+    {
+      "ajourholdstidspunkt": "2022-03-22T10:36:48.250668Z",
+      "erGjeldende": true,
+      "kilde": "Synutopia",
+      "aarsak": "Fødsel",
+      "gyldighetstidspunkt": "1949-01-09T10:36:48.250685Z",
+      "statsborgerskap": "NOR",
+      "ervervsdato": "1949-01-09"
+    }
+  ]
+}

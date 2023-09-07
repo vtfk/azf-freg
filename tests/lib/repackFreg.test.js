@@ -3,6 +3,7 @@ const repackFreg = require('../../lib/repackFreg')
 // What to test
 const personMedBostedsdresse = require('../data/testpersons/personMedBostedsadresse.json')
 const personMedPostdresseOgBostedsadresse = require('../data/testpersons/personMedPostadresseOgBostedsadresse.json')
+const personMedPostdresseFrittFormat = require('../data/testpersons/personMedPostadresseFrittFormat.json')
 const personMedAdressebeskyttelse = require('../data/testpersons/personMedAddressebeskyttelse.json') // denne har strengt fortrolig adresse
 const personMedFortroligbeskyttelse = require('../data/testpersons/personMedFortroligbeskyttelse.json')
 const personMedUtenlandskAdresse = require('../data/testpersons/personMedUtenlandskadresse.json')
@@ -33,6 +34,13 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresseIUtlandet.poststed).toBe('Litt testby- eller stedsnavn')
     expect(repacked.postadresseIUtlandet.postnummer).toBe('Testpostkode utland 55')
     expect(repacked.postadresseIUtlandet.landkode).toBe('CV')
+    expect(repacked.postadresseIUtlandet.adressegradering).toBe('ugradert')
+  })
+  test('Person har postadresse i fritt format', () => {
+    const repacked = repackFreg(personMedPostdresseFrittFormat)
+    expect(repacked.postadresse.gateadresse).toBe('POSTBOKS 146 BLEIE')
+    expect(repacked.postadresse.poststed).toBe('GUGGENHEIM')
+    expect(repacked.postadresse.postnummer).toBe('3222')
     expect(repacked.postadresseIUtlandet.adressegradering).toBe('ugradert')
   })
   test('Person har utenlandsk adresse (ikke i fritt format)', () => {
