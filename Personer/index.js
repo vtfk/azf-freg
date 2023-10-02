@@ -60,7 +60,9 @@ module.exports = async function (context, req) {
     logger('info', ['successfully repacked result'])
     return { status: 200, body: repacked }
   } catch (error) {
-    logger('error', ['error when calling freg', error.toString()])
-    return { status: 500, body: error.toString() }
+    const { writeFileSync } = require('fs')
+    writeFileSync('./err.json', JSON.stringify(error, null, 2))
+    logger('error', ['error when calling freg', error.response?.data || error.stack || error.toString()])
+    return { status: 500, body: error.response?.data || error.stack || error.toString() }
   }
 }
