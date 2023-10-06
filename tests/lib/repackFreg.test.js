@@ -6,6 +6,7 @@ const personMedPostdresseOgBostedsadresse = require('../data/testpersons/personM
 const personMedPostdresseFrittFormat = require('../data/testpersons/personMedPostadresseFrittFormat.json')
 const personMedAdressebeskyttelse = require('../data/testpersons/personMedAddressebeskyttelse.json') // denne har strengt fortrolig adresse
 const personMedFortroligbeskyttelse = require('../data/testpersons/personMedFortroligbeskyttelse.json')
+const personMedOppholdsadresseKlientadresse = require('../data/testpersons/personMedOppholdsadresseKlientadresse.json')
 const personMedUtenlandskAdresse = require('../data/testpersons/personMedUtenlandskadresse.json')
 const personMedForeldreansvar = require('../data/testpersons/personMedForeldreansvar.json')
 
@@ -80,6 +81,28 @@ describe('Adresser blir repacked som forventet når', () => {
     expect(repacked.postadresse.poststed).toBe('SÆTRE')
     expect(repacked.postadresse.postnummer).toBe('3475')
     expect(repacked.postadresse.adressegradering).toBe('fortrolig')
+  })
+  test('Person har adressegradering KLIENTADRESSE - uten option "includeFortrolig"', () => {
+    const repacked = repackFreg(personMedOppholdsadresseKlientadresse)
+    expect(repacked.oppholdsadresse.gateadresse).toBe('Klientadresse')
+    expect(repacked.oppholdsadresse.poststed).toBe('UKJENT')
+    expect(repacked.oppholdsadresse.postnummer).toBe('9999')
+    expect(repacked.oppholdsadresse.adressegradering).toBe('KLIENTADRESSE')
+    expect(repacked.postadresse.gateadresse).toBe('Klientadresse')
+    expect(repacked.postadresse.poststed).toBe('UKJENT')
+    expect(repacked.postadresse.postnummer).toBe('9999')
+    expect(repacked.postadresse.adressegradering).toBe('KLIENTADRESSE')
+  })
+  test('Person har adressegradering KLIENTADRESSE - med option "includeFortrolig" and husnummer is missing', () => {
+    const repacked = repackFreg(personMedOppholdsadresseKlientadresse, { includeFortrolig: true })
+    expect(repacked.oppholdsadresse.gateadresse).toBe('Suppehuegata 82')
+    expect(repacked.oppholdsadresse.poststed).toBe('Plundre')
+    expect(repacked.oppholdsadresse.postnummer).toBe('1664')
+    expect(repacked.oppholdsadresse.adressegradering).toBe('KLIENTADRESSE')
+    expect(repacked.postadresse.gateadresse).toBe('Suppehuegata 82')
+    expect(repacked.postadresse.poststed).toBe('Plundre')
+    expect(repacked.postadresse.postnummer).toBe('1664')
+    expect(repacked.postadresse.adressegradering).toBe('KLIENTADRESSE')
   })
 })
 
