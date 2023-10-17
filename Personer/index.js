@@ -3,7 +3,7 @@ const axios = require('axios')
 const repack = require('../lib/repackFreg')
 const decodeAccessToken = require('../lib/decodeAadToken')
 const { logConfig, logger } = require('@vtfk/logger')
-const { freg } = require('../config')
+const { freg, apiRole } = require('../config')
 
 module.exports = async function (context, req) {
   logConfig({
@@ -16,6 +16,7 @@ module.exports = async function (context, req) {
   logger('info', ['new Request. Checking token'])
   const decoded = decodeAccessToken(req.headers.authorization)
   if (!decoded.verified) return { status: 401, body: decoded.msg }
+  if (!decoded.roles.includes(apiRole)) return { status: 401, body: 'Access token does not include required role for this operation' }
   logConfig({
     prefix: `azf-freg - Personer - ${decoded.appid}${decoded.upn ? ' - ' + decoded.upn : ''}`,
     azure: {

@@ -15,5 +15,6 @@ module.exports = {
   freg: {
     url: process.env.FREG_URL ?? 'www.vg.vg.vg.no',
     rettighet: process.env.FREG_RETTIGHET ?? 'rettighet'
-  }
+  },
+  apiRole: process.env.API_ROLE ?? 'Freg.Read'
 }
