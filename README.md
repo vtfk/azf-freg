@@ -76,7 +76,14 @@ Headers: {
 	"postadresseIUtlandet": null
 }
 ```
-If person with {ssn} is not found - api returns 404
+
+If person with {ssn} is not found - api returns
+```json
+{
+	"foedselsEllerDNummer": null,
+	"status": "fant ingen med denne identifikasjonen"
+}
+```
 
 ### Optional parameters
 **includeRawFreg** - boolean
